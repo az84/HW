@@ -1,25 +1,27 @@
-// // create the team
-createTeam = (team) => {
-    data = [];
-    for (let i = 0; i < team.length; i++) {
-        const Employee = team[i];
-        const type = Employee.getRole();
-        if (type === 'Manager') {
-            const ManagerCard = createManager(Employee);
-            data.push(ManagerCard);
-        }
-        if (type == 'Engineer') {
-            const EngineerCard = createEngineer(Employee);
-            data.push(EngineerCard);
-        }
-        if (type === 'Intern') {
-            const InternCard = createIntern(Employee);
-            data.push(InternCard);
-        }
-    }
-    return data.join("");
+// create the team
+const generateTeam = team => {
 
-}
+
+    const teamArray = [];
+
+    teamArray.push(team
+        .filter(employee => employee.getRole() === "Manager")
+        .map(manager => createManager(manager))
+    );
+    teamArray.push(team
+        .filter(employee => employee.getRole() === "Engineer")
+        .map(engineer => createEngineer(engineer))
+        .join("")
+    );
+    teamArray.push(team
+        .filter(employee => employee.getRole() === "Intern")
+        .map(intern => createIntern(intern))
+        .join("")
+    );
+
+    return teamArray.join("");
+
+    }
 
     // create the manager html
     const createManager = manager => {
@@ -104,14 +106,14 @@ module.exports = team => {
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 jumbotron mb-3 team-heading">
-                <h1 class="text-center">My Team</h1>
+                <h1 class="text-center">Team</h1>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="team-area col-12 d-flex justify-content-center">
-                ${createTeam(team)}
+                ${generateTeam(team)}
             </div>
         </div>
     </div>
