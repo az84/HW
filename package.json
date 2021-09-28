@@ -1,0 +1,23 @@
+{
+  "name": "team-profile-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/az84/Team-Profile-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/az84/Team-Profile-/issues"
+  },
+  "homepage": "https://github.com/az84/Team-Profile-#readme",
+  "dependencies": {
+    "inquirer": "^8.1.5",
+    "jest": "^27.2.1"
+  }
+}
