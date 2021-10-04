@@ -61,10 +61,10 @@ function teamBuilder() {
         ]
       }
     ]).then(userChoice => {
-      if (userChoice.memberChoice == "add engineer") {
+      if (userChoice.memberChoice == "Engineer") {
         console.log('engineer');
         addEngineer();
-      } else if (userChoice.memberChoice == 'add intern') {
+      } else if (userChoice.memberChoice == 'Intern') {
         console.log('intern')
         addIntern();
       } else {
@@ -143,7 +143,6 @@ function teamBuilder() {
       fs.writeFileSync(outputPath, render(teamMembers), "utf-8");
     }
 
-    createManager();
 
   }
 
