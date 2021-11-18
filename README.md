@@ -1,22 +1,12 @@
-# 10 Object-Oriented Programming: Team Profile Generator
+# Team Profile Generator
 
-## Your Task
+## Summary
 
-Your task is to build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Testing is key to making code maintainable, so you’ll also write a unit test for every part of your code and ensure that it passes each test.
+Task is to build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Testing is key to making code maintainable, so you’ll also write a unit test for every part of your code and ensure that it passes each test.
 
 Because this application won’t be deployed, you’ll need to provide a link to a walkthrough video that demonstrates its functionality and all of the tests passing. You’ll need to submit a link to the video AND add it to the readme of your project.
 
-> **Note**: There is no starter code for this assignment.
-
 ## User Story
-
-```md
-AS A manager
-I WANT to generate a webpage that displays my team's basic info
-SO THAT I have quick access to their emails and GitHub profiles
-```
-
-## Acceptance Criteria
 
 ```md
 GIVEN a command-line application that accepts user input
@@ -40,12 +30,7 @@ THEN I exit the application, and the HTML is generated
 
 Walkthrough Video link: https://watch.screencastify.com/v/mRgEhAToIe88DdmV0Aeu
 
-
-## Getting Started
-
-This homework will combine many of the skills we've covered so far. In addition to the User Story and Acceptance Criteria, we’ve provided some guidelines to help get started.
-
-Your application should use [Jest](https://www.npmjs.com/package/jest) for running the unit tests and [Inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user. The application will be invoked by using the following command:
+The application should use [Jest](https://www.npmjs.com/package/jest) for running the unit tests and [Inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user. The application will be invoked by using the following command:
 
 ```bash
 node index.js
